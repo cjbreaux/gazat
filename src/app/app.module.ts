@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { CitySplashComponent } from './city-splash/city-splash.component';
 import { BlogPanelComponent } from './blog-panel/blog-panel.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
     CitySplashComponent,
-    BlogPanelComponent
+    BlogPanelComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

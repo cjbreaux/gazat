@@ -18,8 +18,8 @@ This project is a site clone of [ZAGAT](https://www.zagat.com/) using the Angula
   --top-nav
   --city-splash
   --blog-panel
-  --blog-tile
-    -contact
+    -blog-tile
+  --contact
   --about
   --cities
   --footer
