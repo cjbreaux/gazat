@@ -2,6 +2,8 @@
   display: flex;
   background-color: grey;
   height: 6vh;
+  width: 100vw;
+  position: fixed;
   img {
     height: 90%;
     margin-left: 2vw;
@@ -17,6 +19,7 @@
 .links {
   display: flex;
   margin-left: auto;
+  margin-right: 2vw;
   border: 1px solid red;
   a {
     align-self: center;
