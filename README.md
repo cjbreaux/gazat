@@ -15,6 +15,7 @@ This project is a site clone of [ZAGAT](https://www.zagat.com/) using the Angula
 ### Plan For Component Tree
 <pre>
 --app-root
+  --top-nav
   --city-splash
   --blog-panel
   --blog-tile
