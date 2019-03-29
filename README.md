@@ -25,3 +25,8 @@ This project is a site clone of [ZAGAT](https://www.zagat.com/) using the Angula
 </pre>
 
 This represents the initial component layout for the landing page.
+
+## Fonts
+
+CalibreWeb
+DomaineTest

@@ -1,0 +1,26 @@
+.topNav {
+  display: flex;
+  background-color: grey;
+  height: 6vh;
+  img {
+    height: 90%;
+    margin-left: 2vw;
+    align-self: center;
+  }
+  input {
+    width: 18vw;
+    text-align: center;
+    margin-left: 2vw;
+  }
+}
+
+.links {
+  display: flex;
+  margin-left: auto;
+  border: 1px solid red;
+  a {
+    align-self: center;
+    margin-left: 2vw;
+    text-decoration: none;
+  }
+}
