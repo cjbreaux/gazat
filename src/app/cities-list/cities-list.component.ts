@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { City } from '../models/city.model';
 
 
@@ -9,6 +9,12 @@ import { City } from '../models/city.model';
 })
 export class CitiesListComponent implements OnInit {
   @Input() childCityList: City[];
+  @Output() clickSender = new EventEmitter();
+
+  cityClicked(city: City) {
+    this.clickSender.emit(city);
+    console.log(city);
+  }
 
   constructor() { }
 

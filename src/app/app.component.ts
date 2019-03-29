@@ -17,4 +17,10 @@ export class AppComponent {
     new City('Charleston'),
     new City('Chicago')
   ];
+  masterSelectedCity: City = this.masterCityList[0];
+  changeCity(clickedCity){
+    console.log(this.masterSelectedCity);
+    this.masterSelectedCity = clickedCity;
+    console.log(this.masterSelectedCity);
+  }
 }

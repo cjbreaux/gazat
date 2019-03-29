@@ -3,11 +3,11 @@
 
 <app-city-splash></app-city-splash>
 
-<app-blog-panel></app-blog-panel>
+<app-blog-panel [childSelectedCity]="masterSelectedCity"></app-blog-panel>
 
 <app-contact></app-contact>
 
-<app-cities-list [childCityList]="masterCityList"></app-cities-list>
+<app-cities-list [childCityList]="masterCityList" (clickSender)="changeCity($event)"></app-cities-list>
 
 
 <router-outlet></router-outlet>
