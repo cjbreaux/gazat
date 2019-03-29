@@ -1,5 +1,24 @@
 .contact {
+  display: flex;
+  align-items: center;
   height: 20vh;
   background-color: black;
   color: white;
+}
+
+.emailReg {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid white;
+  padding-left: 5vw;
+  width: 50%;
+  height: 15vh;
+
+}
+
+.iconList {
+  width: 50%;
+  height: 15vh;
 }

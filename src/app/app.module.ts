@@ -7,6 +7,8 @@ import { TopNavComponent } from './top-nav/top-nav.component';
 import { CitySplashComponent } from './city-splash/city-splash.component';
 import { BlogPanelComponent } from './blog-panel/blog-panel.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { CitiesListComponent } from './cities-list/cities-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ContactComponent } from './contact/contact.component';
     TopNavComponent,
     CitySplashComponent,
     BlogPanelComponent,
-    ContactComponent
+    ContactComponent,
+    AboutComponent,
+    CitiesListComponent
   ],
   imports: [
     BrowserModule,
