@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 40vh;
   color: white;
   background-image: url("/assets/portland.jpg");
   background-size: cover;
@@ -19,5 +19,8 @@
   a {
     text-decoration: none;
     margin-left: 2vw;
+  }
+  h2 {
+    font-style: italic;
   }
 }
