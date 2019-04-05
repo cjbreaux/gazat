@@ -16,15 +16,15 @@ This project is a site clone of [ZAGAT](https://www.zagat.com/) using the Angula
 
 
 ### Current Features
-* Custom logo and favicon
-* Dynamically list available cities
-* Display current city name in navbar depending on selected city
 
-### Planned Features
+* Custom logo and favicon
 * Dynamic routing between city pages
 * Populate blog-tiles with city specific data
-* Remote hosting of city data on Firebase
 * Deployment to Firebase
+
+
+### Planned Features
+* Remote hosting of city data on Firebase
 
 ### Known Bugs
 * Page does not properly update unless two different cities are selected on the default page
@@ -44,6 +44,10 @@ This project is a site clone of [ZAGAT](https://www.zagat.com/) using the Angula
 Currently, the site is only minimally styled. UI/UX with responsive elements are planned.
 
 ### Setup Instructions
+
+* View at https://gazat-999c4.firebaseapp.com/
+
+* OR
 * Clone file from https://github.com/cjbreaux/gazat.git
 * Navigate to the cloned folder in the terminal.
 * While in the project folder, run the following in the terminal:
@@ -58,7 +62,7 @@ $ ng serve --open
 
 
 ### Stretch Goals
-
+* Pull cities from remote database
 * Functional drop-down menus
 * More closely emulate the original site's look
 
