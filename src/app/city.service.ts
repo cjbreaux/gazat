@@ -12,4 +12,13 @@ export class CityService {
   getCities() {
     return CITIES;
   }
+
+  getCityByName(cityName: string) {
+    for (let i=0; i< CITIES.length; i++) {
+      if (CITIES[i].name === cityName) {
+        return CITIES[i];
+      }
+    }
+  }
+
 }
