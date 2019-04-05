@@ -9,7 +9,7 @@ import { CityService } from '../city.service';
   providers: [CityService]
 })
 export class TopNavComponent implements OnInit {
-  childSelectedCity: City;
+  childSelectedCity: City[];
 
   constructor(private cityService: CityService) { }
 

@@ -4,6 +4,6 @@
 
 <ul>
   <li *ngFor="let city of childCityList" (click)="goToCityPage(city)">
-    <p><span  href="#">{{city.name}}</span></p>
+    <p><span  href="#">{{city.name}}:{{city.id}}</span></p>
   </li>
 </ul>
