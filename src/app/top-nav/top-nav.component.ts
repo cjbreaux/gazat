@@ -1,17 +1,20 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { City } from '../models/city.model';
+import { CityService } from '../city.service';
 
 @Component({
   selector: 'app-top-nav',
   templateUrl: './top-nav.component.html',
-  styleUrls: ['./top-nav.component.scss']
+  styleUrls: ['./top-nav.component.scss'],
+  providers: [CityService]
 })
 export class TopNavComponent implements OnInit {
-  @Input() childSelectedCity: City;
+  childSelectedCity: City;
 
-  constructor() { }
+  constructor(private cityService: CityService) { }
 
   ngOnInit() {
+    this.childSelectedCity = this.cityService.getCities();
   }
 
 }

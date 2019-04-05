@@ -3,8 +3,7 @@
 </p>
 
 <ul>
-  <li *ngFor="let city of childCityList">
-    <!-- <p> <span (click)="cityClicked(city)" href="#">{{city.name}}</span></p> -->
-    <p>{{city.name}}</p>
+  <li *ngFor="let city of childCityList" (click)="goToCityPage(city)">
+    <p><span  href="#">{{city.name}}</span></p>
   </li>
 </ul>
