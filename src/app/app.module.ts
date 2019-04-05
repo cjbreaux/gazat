@@ -16,9 +16,6 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
 
 
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +33,7 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    routing,
+    routing
 
   ],
   providers: [],

@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
 export class CitiesListComponent implements OnInit {
 
   childCityList: City[];
-  // @Output() clickSender = new EventEmitter();
+
 
   constructor(private cityService: CityService, private router: Router) { }
 
@@ -25,7 +25,7 @@ export class CitiesListComponent implements OnInit {
 
   goToCityPage(clickedCity: City) {
     this.router.navigate([clickedCity.name]);
-    // this.clickSender.emit();
+
   }
 
 

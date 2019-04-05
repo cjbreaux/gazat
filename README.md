@@ -12,25 +12,7 @@ Chris Breaux
 
 This project is a site clone of [ZAGAT](https://www.zagat.com/) using the Angular framework. The site will use dynamic routing to display city specific information to the user. Additionally, this information will be gathered from a remote database.
 
-### Plan For Component Tree
-<pre>
---app-root
-  --top-nav
-  --city-splash
-  --blog-panel
-    -blog-tile
-  --contact
-  --about
-  --cities
-  --footer
-</pre>
 
-This represents the initial component layout for the landing page.
-
-## Fonts
-
-CalibreWeb
-DomaineTest
 
 
 ### Current Features
@@ -43,6 +25,9 @@ DomaineTest
 * Populate blog-tiles with city specific data
 * Remote hosting of city data on Firebase
 * Deployment to Firebase
+
+### Known Bugs
+* Page does not properly update unless two different cities are selected on the default page
 
 ### Technologies and Resources
 
@@ -77,6 +62,10 @@ $ ng serve --open
 * Functional drop-down menus
 * More closely emulate the original site's look
 
+## Fonts (not yet implemented)
+
+* CalibreWeb
+* DomaineTest
 
 ### License
 
