@@ -13,6 +13,10 @@ import { CitiesListComponent } from './cities-list/cities-list.component';
 import { MainCityViewComponent } from './main-city-view/main-city-view.component';
 import { DefaultPageViewComponent } from './default-page-view/default-page-view.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -25,12 +29,14 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
     CitiesListComponent,
     MainCityViewComponent,
     DefaultPageViewComponent,
-    BlogCardComponent
+    BlogCardComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    routing
+    routing,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
