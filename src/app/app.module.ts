@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { routing } from './app.routing';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,8 @@ import { BlogPanelComponent } from './blog-panel/blog-panel.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { CitiesListComponent } from './cities-list/cities-list.component';
+import { MainCityViewComponent } from './main-city-view/main-city-view.component';
+import { DefaultPageViewComponent } from './default-page-view/default-page-view.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { CitiesListComponent } from './cities-list/cities-list.component';
     BlogPanelComponent,
     ContactComponent,
     AboutComponent,
-    CitiesListComponent
+    CitiesListComponent,
+    MainCityViewComponent,
+    DefaultPageViewComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
