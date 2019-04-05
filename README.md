@@ -47,7 +47,7 @@ Currently, the site is only minimally styled. UI/UX with responsive elements are
 
 * View at https://gazat-999c4.firebaseapp.com/
 
-* OR
+ OR
 * Clone file from https://github.com/cjbreaux/gazat.git
 * Navigate to the cloned folder in the terminal.
 * While in the project folder, run the following in the terminal:
