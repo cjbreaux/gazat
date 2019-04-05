@@ -14,14 +14,19 @@ import { CityService } from '../city.service';
 export class DefaultPageViewComponent implements OnInit {
   cityName: string = null;
   cityToDisplay: City;
+  cityList: City[];
 
   constructor(private route: ActivatedRoute, private location: Location, private cityService: CityService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.cityName = urlParameters['city'];
+      if (this.cityToDisplay) {
+        this.cityToDisplay = this.cityService.getCityByName(this.cityName)
+      } else {
+        this.cityToDisplay = this.cityService.getCityByName('Portland')
+      }
     });
-    this.cityToDisplay = this.cityService.getCityByName(this.cityName)
   }
 
 }

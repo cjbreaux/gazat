@@ -19,7 +19,11 @@ export class BlogCardComponent implements OnInit {
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.cityName = urlParameters['city'];
-      this.cityToDisplay = this.cityService.getCityByName(this.cityName)
+      if (this.cityToDisplay) {
+        this.cityToDisplay = this.cityService.getCityByName(this.cityName)
+      } else {
+        this.cityToDisplay = this.cityService.getCityByName('Portland')
+      }
     });
   }
 
