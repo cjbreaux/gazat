@@ -1,22 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { City } from '../models/city.model';
 import { CityService } from '../city.service';
 
 @Component({
-  selector: 'app-main-city-view',
-  templateUrl: './main-city-view.component.html',
-  styleUrls: ['./main-city-view.component.scss'],
+  selector: 'app-blog-card',
+  templateUrl: './blog-card.component.html',
+  styleUrls: ['./blog-card.component.scss'],
   providers: [CityService]
 })
-export class MainCityViewComponent implements OnInit {
+export class BlogCardComponent implements OnInit {
   cityName: string = null;
   cityToDisplay: City;
 
   constructor(private route: ActivatedRoute, private location: Location, private cityService: CityService) { }
 
-//Moving the function to set cityToDisplay seems to work!
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.cityName = urlParameters['city'];

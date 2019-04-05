@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { CitiesListComponent } from './cities-list/cities-list.component';
 import { MainCityViewComponent } from './main-city-view/main-city-view.component';
 import { DefaultPageViewComponent } from './default-page-view/default-page-view.component';
+import { BlogCardComponent } from './blog-card/blog-card.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DefaultPageViewComponent } from './default-page-view/default-page-view.
     AboutComponent,
     CitiesListComponent,
     MainCityViewComponent,
-    DefaultPageViewComponent
+    DefaultPageViewComponent,
+    BlogCardComponent
   ],
   imports: [
     BrowserModule,

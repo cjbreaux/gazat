@@ -19,8 +19,8 @@ export class TopNavComponent implements OnInit {
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.cityName = urlParameters['city'];
+      this.cityToDisplay = this.cityService.getCityByName(this.cityName)
     });
-    this.cityToDisplay = this.cityService.getCityByName(this.cityName)
   }
 
 }

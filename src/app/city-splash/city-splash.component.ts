@@ -1,4 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, AfterViewInit, Input} from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { City } from '../models/city.model';
@@ -10,7 +10,7 @@ import { CityService } from '../city.service';
   styleUrls: ['./city-splash.component.scss'],
   providers: [CityService]
 })
-export class CitySplashComponent implements OnInit {
+export class CitySplashComponent implements OnInit, AfterViewInit {
   cityName: string = null;
   cityToDisplay: City;
 
@@ -23,12 +23,13 @@ export class CitySplashComponent implements OnInit {
     this.cityToDisplay = this.cityService.getCityByName(this.cityName)
   }
 
-  // ngOnChanges() {
-  //   this.route.params.forEach((urlParameters) => {
-  //     this.cityName = urlParameters['city'];
-  //   });
-  //   this.cityToDisplay = this.cityService.getCityByName(this.cityName)
-  // }
+  ngAfterViewInit() {
+    this.route.params.forEach((urlParameters) => {
+      this.cityName = urlParameters['city'];
+      this.cityToDisplay = this.cityService.getCityByName(this.cityName)
+      console.log(this.cityToDisplay)
+    });
+  }
 
 
 }
