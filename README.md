@@ -10,7 +10,7 @@ Chris Breaux
 
 ### Description
 
-This project is a site clone of [ZAGAT](https://www.zagat.com/) using the Angular framework. The site will use dynamic routing to display city specific information to the user. Additionally, this information will be gathered from a remote database.
+This project is a site clone of [ZAGAT](https://www.zagat.com/) using the Angular framework. The site will use dynamic routing to display city specific information to the user. Additionally, this information will be gathered from a remote database (planned feature).
 
 
 
