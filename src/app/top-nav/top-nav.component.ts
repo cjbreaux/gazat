@@ -1,4 +1,6 @@
 import { Component, OnInit} from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
 import { City } from '../models/city.model';
 import { CityService } from '../city.service';
 
@@ -9,12 +11,16 @@ import { CityService } from '../city.service';
   providers: [CityService]
 })
 export class TopNavComponent implements OnInit {
-  childSelectedCity: City[];
+  cityName: string = null;
+  cityToDisplay: City;
 
-  constructor(private cityService: CityService) { }
+  constructor(private route: ActivatedRoute, private location: Location, private cityService: CityService) { }
 
   ngOnInit() {
-    this.childSelectedCity = this.cityService.getCities();
+    this.route.params.forEach((urlParameters) => {
+      this.cityName = urlParameters['city'];
+    });
+    this.cityToDisplay = this.cityService.getCityByName(this.cityName)
   }
 
 }

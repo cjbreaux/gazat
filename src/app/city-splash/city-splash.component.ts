@@ -23,4 +23,12 @@ export class CitySplashComponent implements OnInit {
     this.cityToDisplay = this.cityService.getCityByName(this.cityName)
   }
 
+  // ngOnChanges() {
+  //   this.route.params.forEach((urlParameters) => {
+  //     this.cityName = urlParameters['city'];
+  //   });
+  //   this.cityToDisplay = this.cityService.getCityByName(this.cityName)
+  // }
+
+
 }
